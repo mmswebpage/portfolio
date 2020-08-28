@@ -5,6 +5,10 @@ body{
   overflow-x: hidden;
 }
 
+#wrapper{
+  overflow-x: hidden;
+}
+
 header{
   display: flex;
   flex-direction: row-reverse;
@@ -1031,3 +1035,8 @@ i::before{
   }
   
 }
+
+
+
+
+
