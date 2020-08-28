@@ -2,11 +2,11 @@ body{
   margin: 0;
   padding: 0;
   background: #f8f8f8;
-  overflow-x: hidden;
 }
 
-#wrapper{
+.body-wrapper {
   overflow-x: hidden;
+  position: relative;
 }
 
 header{
@@ -566,8 +566,9 @@ i::before{
 
 /* タブレット */
 @media screen and (max-width: 959px) {
-  body{
+  .body-wrapper {
     overflow-x: hidden;
+    position: relative;
   }
 
   header{
@@ -816,8 +817,9 @@ i::before{
 
 /* スマホ */
 @media screen and (max-width: 559px) {
-  body{
+  .body-wrapper {
     overflow-x: hidden;
+    position: relative;
   }
 
   #header{
