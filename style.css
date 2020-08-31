@@ -994,7 +994,7 @@ i::before{
       max-width: 200px;
       height: 100%;
       margin: 0 auto;
-      padding-right: 30px;
+      padding-right: 0px;
     }
 
   .popup_wrapper img{
