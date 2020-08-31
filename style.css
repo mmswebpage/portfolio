@@ -8,6 +8,10 @@ body{
   overflow-x: hidden;
   position: relative;
 }
+::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+}
 
 header{
   display: flex;
@@ -558,18 +562,12 @@ footer a:hover::after {
   width: 100%;
 }
 
-
-
 i::before{
   display: none;
 }
 
 /* タブレット */
 @media screen and (max-width: 959px) {
-  .body-wrapper {
-    overflow-x: hidden;
-    position: relative;
-  }
 
   header{
     display: block;
@@ -577,12 +575,10 @@ i::before{
     margin-bottom: 100px;
   }
 
-
   #header img{
     width: 100%;
     padding-top: 0;
   }
-
   
   #header h1{
     top: -100px;
@@ -694,8 +690,6 @@ i::before{
     width: 300px;
   }
 
-
-
   #works{
     height: 550px;
     font-size: 15px;
@@ -722,7 +716,7 @@ i::before{
   #portofolio{
     /* font-family: monospace; */
     margin: 0 auto;
-    height: 1300px;
+    height: 950px;
     width: 600px;
   }
   
@@ -764,17 +758,32 @@ i::before{
 
   
 .item{
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+  width: 100px;
+  padding-left: 25px;
+}
+
+.thumb{
+  width: 150px;
+  display: block;
   margin: 0 auto;
-  width: 200px;
 }
 
   .item_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    max-width:480px;
+    width: 600px;    
+    height: 100%;
+    padding: 0;
   }
 
+  .item-bg{
+    display: none;
+  }
+
+  .popup_wrapper {
+    width: 400px;
+    height: 400px;
+    margin: -300px 0 0 -200px;
+  }
 
 
   #skills{
@@ -817,10 +826,6 @@ i::before{
 
 /* スマホ */
 @media screen and (max-width: 559px) {
-  .body-wrapper {
-    overflow-x: hidden;
-    position: relative;
-  }
 
   #header{
     height: 100%;
@@ -911,18 +916,20 @@ i::before{
 
   
   #portofolio{
-    width: 90%;
+    width: 80%;
+    height: 1400px;
+    margin: 0 auto;
   }
   
   #portofolio-bg{
-    width: 90%;
+    width: 100vw;
     height: 1500px;
   }
   
   #mysite{
     display: flex;
     justify-content: center;
-    padding: 0 40px;
+    padding: 0 0px;
     margin: 0;
   }
   
@@ -954,19 +961,57 @@ i::before{
   
   
   .item{
-    padding-bottom: 150px;
-    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 100px;
+  
+  }
+
+  .thumb{
+    display: block;
+    margin: 0 auto;  }
+
+
+  body{
+    width: 100%;
+  }
+  main{
+    max-width: 100%;
+    display: block;
+  }
+  .item-bg{
+    display: none;
   }
   
     .item_wrapper{
-      max-width: 300px;
+      display: block;
+      max-width: 200px;
+      height: 100%;
+      margin: 0 auto;
+      padding-right: 30px;
     }
-  
-  
+
+  .popup_wrapper img{
+      width: 300px;
+    }
+    
+    .popup_wrapper {
+      width: 300px;
+      height: 400px;
+      margin: -300px 0 0 -150px;
+    }
+
+    .popup_wrapper .popup {
+      position: relative;
+    }
+    
+
+    .global_wrapper{
+      width: 90vw;
+      margin:0;
+    }
   
   #skills{
     margin: 0 auto;
-    margin-top: 290px;
     width: 80%;
   }
 
@@ -976,7 +1021,7 @@ i::before{
   }
   
   .skill{
-    width: 120px;
+    width: 100%;
     padding: 20px;
     margin-bottom: 50px;
   }
@@ -1037,8 +1082,3 @@ i::before{
   }
   
 }
-
-
-
-
-
