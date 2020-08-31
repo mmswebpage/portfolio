@@ -833,6 +833,11 @@ i::before{
     height: 100%;
     margin-bottom: 0px;
   }
+
+  #header img{
+    height: 300px;
+    object-fit: cover;
+  }
   
   #header h1{
     position: absolute;
@@ -841,12 +846,12 @@ i::before{
   }
   
   #header-h2-1{
-    top: 100px;
+    top: 110px;
     font-size: 20px;
   }
   
   #header-h2-2{
-    top:140px;
+    top:150px;
     font-size: 20px;
   }
 
