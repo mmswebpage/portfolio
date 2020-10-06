@@ -10,269 +10,166 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <title>Portofolio</title>
 </head>
-<div class="body-wrapper">
-<body>
-  <header>
-    <div id="header">
-      <img src="img/header-img.jpg" alt="header image">
-      <h1>WEB</h1>
-      <div id="header-h2">
-      <h2 id="header-h2-1">PROGRAMMING</h2>
-      <h2 id="header-h2-2">MARKETING</h2>
-      </div>
-      
-    </div>  
 
-      <i class="fas fa-bars"></i>
-      <nav id="header-menu">
-      <ul>
-        <li id="home"><a href="#home">HOME</a></li>
-        <li><a href="#intro">INTRO</a></li>
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#portofolio">PORTFOLIO</a></li>
-        <li><a href="#skills">SKILLS</a></li>        
-      </ul>
-    </nav>
+<body>
+
+  <!-- ローディング -->
+  <div id="loading">
+    <div class="self-building-square-spinner">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square clear"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square clear"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  </div>
+  
+
+  <header id="top">
+    <img id="header-pc-img" src="img/header-pc.jpg.png">
+    <div id="sp-header">
+      <h1>Misaki Mashimo</h1>
+    <div class="underline"></div>
+    <p>programming</p>
+    <p>web design</p>
+    <p>marketing</p>
+    <i class="fas fa-angle-double-down"></i>
+    </div>
+    
   </header>
   <main>
+    <div class="main-wrapper">
+      <h2>about</h2>
+      <p class="txt">はじめまして。<br>
+        フリーランスでWEBデザイン,コーディング、マーケティング、<br class="br-pc">
+        SNSマーケティングのお仕事を受注しております。<br class="br-pc">
+        お客様の声を第一に丁寧な対応を心掛けております。 <br class="br-pc">
+        「期日を守る」ことはもちろん、 「コミュニケーション」を大切にし、<br class="br-pc">
+        心地の良いビジネスができるよう日々努力しております。 <br>
+        経歴とスキル等以下ご参照下さい。<br>
+        </p>
 
-    <section id="intro">
-        <img id="img-right" src="img/branch.png" alt="branch image">  
-        <div id="intro-bg"></div>
-      <h1 class="h1-deco">- INTRO -</h1>
-      <p id="greeting">はじめまして。<br>
-        フリーランスでWEBデザイン,コーディングのお仕事を受注しております。<br>
-        お客様の声を第一に丁寧な対応を心掛けております。 「期日を守る」ことはもちろん、 「コミュニケーション」を大切にし、心地の良いビジネスができるよう日々努力しております。
-        経歴とスキル等以下ご参照下さい。</p>
-
-        <img id="signature" src="img/from Misaki.png" alt="misaki's signature" width= 300px>
-        <img id="img-left" src="img/branch.png" alt="branch image">  
-    </section>
-    
-
-    <section id="works">
-      <h1 class="h1-deco">- WORKS -</h1>
-      <p>WEBサイトの設計とデザインを<span id="works-marketing">マーケティング</span><br>
-        の視点からみたブランドにあった、<br>
-        <span class="underline">ユーザーが観覧しやすい</span>WEBサイトを提案致します。
-      </p>
-      <p>デザインされたWEBサイトを実際に<br>
-        HTML/CSS/jQueryなどを使いコーディングを行います。
-      </p>
-      <p>新規のWEBサイト制作だけでなく、<br>
-        リニューアルサイトの作成、訂正も行えます。
-      </p>
-      <p class="bold-text">最大の目標はみなさんのビジネスへの<br>
-        ”<span class="underline">集客</span>”、”<span class="underline">売り上げ</span>”アップです。<br>
-        マーケティングの知識をフルに生かし、<br>
-        使えるWEBサイト作成を常に意識しております。
-      </p>
-
-    </section>
-    <section id="portofolio">
-      <div id="portoflio-bg"></div>
-            <h1 class="h1-deco">- PORTFOLIO -</h1>
-            <div id="mysite">
-              <div id="mysite-imgbg">
-                <img src="img/mysite.png" width="250">
-                <div id="mysite-bg"></div>
-              </div>
-              <p>当サイトも自身でデザインを致しました。<br>
-                また、HTML/CSS/jQueryを使ったコーディングし、<br>レスポンシブにも対応しております。</p>
-            </div>
-            <h2>- 以下、デザインを行った架空サイト一覧です。 -</h2>
-            <!--ポップアップ背景-->
-            <div class="popupbg"></div>
-          <div class="global_wrapper">
-            <ul class="item_wrapper">
-              <li class="item">
-                <div class="item-bg"></div>
-                <a href="#img01_wrapper" class="pop"
-                  ><img src="img/vacation.jpg" alt="vacation-portfolio image" width="200"  class="thumb"
-                /></a>
-                <div id="img01_wrapper" class="popup_wrapper">
-                  <img src="img/vacation.jpg" alt="" width="400" class="img">
-                </div>
-              </li>
-              <li class="item">
-                <div class="item-bg"></div>
-                <a href="#img02_wrapper" class="pop"
-                  ><img src="img/wine.jpg" alt="wine-portfolio image" width="200"  class="thumb"
-                /></a>
-                <div id="img02_wrapper" class="popup_wrapper">
-                  <img src="img/wine.jpg" alt="" width="400"  class="img">
-                </div>
-              </li>
-              <li class="item">
-                <div class="item-bg"></div>
-                <a href="#img03_wrapper" class="pop"
-                  ><img src="img/matsuri.jpg" alt="matsuri-portfolio image" width="200"  class="thumb"
-                /></a>
-                <div id="img03_wrapper" class="popup_wrapper">
-                  <img src="img/matsuri.jpg" alt="" width="400" class="img">
-                </div>
-              </li>
-            </ul>
-          </div>
-    </section>
-
-    <section id="skills">
-      <h1 class="h1-deco">- SKILLS -</h1>
-    <div id="skill-section">
-            <div class="skill" id=skill1>
-              <div class="box-dashed">
-              <div class="box-color">
-              </div>
-              <h1>
-                HTML<br>
-                CSS
-              </h1>
-            </div>
-            <p class="skill-p">SEO対策を考えたコード。どんなデバイスからも見やすいレスポンシブ対応まで行います。</p>
-          </div>
-        <div class="skill" id=skill2>
-          <div class="box-dashed">
-              <div class="box-color">
-              </div>
-              <h1>
-                jQuery<br>
-                <span id="skill-javascript">JavaScript</span>
-              </h1>
-            </div>
-              <p class="skill-p">JavaScriptのライブラリであるjQueryを用い、動きのあるサイトを実現。</p>          
+        <h2>works</h2>
+         <div class="works-wrapper">
+          <h3>coding</h3>
+          <i class="fas fa-laptop-code"></i>
+          <p class="txt">WEBサイトのコーディング作業を行います。デザイン通りのコーディング、SEO対策、レスポンシブ対応まで行います。<br>
+            動きのあるサイトのコーディングもお任せ下さい。</p>
+          <h3>web deisgn</h3>
+          <i class="fas fa-palette"></i>
+          <p class="txt">ブランドイメージに合ったサイトのデザインを行います。カッコイイデザインから可愛いデザインまで幅広く作成いたします。</p>
+          <h3>marketing</h3>
+          <i class="fas fa-poll"></i>
+          <p class="txt">カナダのカレッジにてマーケティングを専攻。<br>
+          SNSマーケターとしての実務経験がございます。マーケティングのお手伝い、SNS戦略、広告運用のコンサルティングも得意としております。<br>
+        WEB制作においてもマーケティングの視点から考えたお仕事の提案を行えます。</p>
         </div>
-        <div class="skill" id=skill3>
-          <div class="box-dashed">
-            <div class="box-color">
-            </div>
-            <h1>
-              WORDPRESS
-            </h1>
-          </div>
-          <p class="skill-p">以前、自身でブログを持っていたことがあり、WORDPRESSでの作業が可能です。</p>
+
+        <section id="skills">
+          <h2>skills</h2>
+        <div class="skill-wrapper">
+          <div class="skill"><h3>HTML<br>CSS</h3></div>
+        <p class="txt">SEO対策を考えたコード。どんなデバイスからも見やすいレスポンシブ対応まで行います。</p>
         </div>
-        <div class="skill" id=skill4>
-          <div class="box-dashed">
-            <div class="box-color">
-            </div>
-            <h1>
-              Ps
-            </h1>
-          </div>
-          <p class="skill-p">Adobe, Photoshopを使いUI/UXを考えたWEBサイトのデザインを行います。<br>
+        <div class="skill-wrapper">
+          <div class="skill"><h3>jQuery<br>JavaScript</h3></div>
+          <p class="txt">JavaScriptのライブラリであるjQueryを用い、動きのあるサイトを。</p>
+        </div>
+        <div class="skill-wrapper">
+          <div class="skill"><h3 class="oneline">Wordpress</h3></div>
+          <p class="txt">WORDPRESSでの基本動作。テーマのカスタマイズが行えます。</p>
+        </div>
+        <div class="skill-wrapper">
+          <div class="skill"><h3 class="oneline">Ps</h3></div>
+          <p class="txt">Adobe, Photoshopを使いUI/UXを考えたWEBサイトのデザインを行います。
             また、写真加工などPhotoshopを使った作業が行えます。</p>
         </div>
-        <div class="skill" id=skill5>
-          <div class="box-dashed">
-            <div class="box-color">
-            </div>
-            <h1 id="skill-marketing" >
-              MARKETING
-            </h1>
-          </div>
-          <p class="skill-p">英語圏のカレッジでマーケティングを専攻し、顧客のニーズに答え、売り上げを上げる戦略等を学びました。</p>
+        <div class="skill-wrapper">
+          <div class="skill"><h3 class="oneline">Marketing</h3></div>
+          <p class="txt">カナダのカレッジでマーケティングを専攻し、顧客のニーズに答え、売り上げを上げる戦略等を学びました。</p>
         </div>
-        <div class="skill" id=skill6>
-          <div class="box-dashed">
-            <div class="box-color">
-            </div>
-            <h1>
-              JP<br>
-              EN
-            </h1>
-          </div>
-          <p class="skill-p">日本語、また海外在住７年で英語でのお仕事も可能です。海外向けのWEBサイト制作もお任せ下さい。</p>
+        <div class="skill-wrapper">
+          <div class="skill"><h3>JA<br>EN</h3></div>
+          <p class="txt">日本語、また海外在住７年で英語でのお仕事も可能です。海外向けのWEBサイト制作もお任せ下さい。</p>
         </div>
+        </section>
+        
+    </div>
+    <div id="middle-line"></div>
+    <div class="main-wrapper-portflio">
+      <h2>portfolio</h2>
+      <div id="img-wrapper">
+      <img src="img/beer.jpg">
+      <img src="img/LP-美白クリーム.jpg">
+      <img src="img/不動産.jpg">
+      <img src="img/fashion.jpg">
+      <img src="img/vacation.png">
       </div>
-      </section>
-    </section>
-
+    </div>
   </main>
-</div>
+  <a  href="#top"><i id="gotop" class="fas fa-caret-square-up"></i></a>
+  
   <footer>
-    <section class="footer-nav">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#intro">INTRO</a></li>
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#portofolio">PORTFOLIO</a></li>
-        <li><a href="#skills">SKILLS</a></li>        
-      </ul>
-    </section>
-    <p>Copyright ©2020</p>
+<p>Copyright ©2020</p>
   </footer>
+</body>
+
+
+
 
 <script>
-   $(function(){
-    ScrollReveal().reveal('#img-right', { 
-      duration: 8000,
-      origin: 'bottom', 
-      distance: '50px',
-      reset: true   
-});
-    ScrollReveal().reveal('#img-left', { 
-      duration: 8000,
-      delay: 1500,
-      origin: 'bottom', 
-      distance: '50px',
-      reset: true   
-});
-    ScrollReveal().reveal('#header h1', { 
-      duration: 3000,
-      origin: 'top', 
-      distance: '50px',
-      reset: true   
-});
-    ScrollReveal().reveal('#header-h2-1', { 
-      duration: 2500,
-      delay: 1500,
-      origin: 'left', 
-      distance: '50px',
-      reset: true   
-});
-    ScrollReveal().reveal('#header-h2-2', { 
-      duration: 2500,
-      delay: 2000,
-      origin: 'left', 
-      distance: '50px',
-      reset: true   
-});
-    ScrollReveal().reveal('#works p', { 
-      duration: 2500,
-      origin: 'bottom', 
-      distance: '50px',
-      reset: true   
-});
 
-$(".pop").click(function(e) {
-    e.preventDefault();
-    var id = $(this).attr("href"); 
-    $(id).fadeIn();
-    $(".popupbg").fadeIn();
+ $(function(){
+  $(".underline").ready(function(){
+   $(".underline").animate({width:"50%"}, 5000);
   });
-  $(".popupbg,.close_btn").click(function() {
-    $(".popup_wrapper:visible").fadeOut();
-    $(".popupbg").fadeOut();
-  });
+ }); 
 
-  $('.box-color').on('click', () => {
-        $('.skill-p').slideToggle(1000);
-    });
+ $("#header-pc-img").ready(function() {
+	$("#header-pc-img").fadeIn(4000);
+	});
 
-
-// ナビ
-    $('i').click(function() {
-   $(this).toggleClass('active');
-
-if ($(this).hasClass('active')) {
- $('#header-menu').addClass('active');  //クラスを付与
-} else {
-  $('#header-menu').removeClass('active'); //クラスを外す
+// ローディング
+  window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
 }
+
+$(function(){
+    ScrollReveal().reveal('#img-wrapper img', { 
+      duration: 5000,
+      origin: 'bottom', 
+      distance: '50px',
+      reset: true  
+});
+}); 
+
+// スムーススクロール
+
+$(function() {
+    var topBtn = $('#gotop');
+    topBtn.hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
 });
 
-});
 </script>
-</body>
+
 
 </html>
